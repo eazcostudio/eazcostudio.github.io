@@ -132,10 +132,18 @@ nav ul a:hover {
 .btn-primary {
   background: var(--green);
   color: #0f172a;
+  transition: 0.2s;
 }
 
-.btn-primary:hover {
-  background: #16a34a;
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:hover {
+    background: #16a34a;
+    transform: scale(1.07);
+  }
+
+  .btn-primary:active {
+    transform: scale(0.9);
+  }
 }
 
 .btn-outline {
@@ -144,9 +152,16 @@ nav ul a:hover {
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.btn-outline:hover {
-  border-color: var(--green);
-  color: var(--green);
+@media (hover: hover) and (pointer: fine) {
+  .btn-outline:hover {
+    border-color: var(--green);
+    color: var(--green);
+    transform: scale(1.07);
+  }
+
+  .btn-outline:active {
+    transform: scale(0.9);
+  }
 }
 
 /* ── SECTIONS ── */
@@ -199,12 +214,7 @@ section {
 
 .skill-card:hover {
   border-color: rgba(34, 197, 94, 0.4);
-  transform: scale(1.1) translateY(-3px);
-}
-
-.skill-card:active {
-  border-color: rgba(34, 197, 94, 0.4);
-  transform: scale(0.9);
+  transform: translateY(-3px);
 }
 
 .skill-card i {
@@ -331,11 +341,17 @@ section {
   transition: all 0.2s;
 }
 
-.social-link:hover {
-  border-color: var(--green);
-  color: var(--green);
-}
+@media (hover: hover) and (pointer: fine) {
+  .social-link:hover {
+    border-color: var(--green);
+    color: var(--green);
+    transform: scale(1.08);
+  }
 
+  .social-link:active {
+    transform: scale(0.9);
+  }
+}
 /* ── FOOTER ── */
 footer {
   text-align: center;
