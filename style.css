@@ -135,15 +135,13 @@ nav ul a:hover {
   transition: 0.2s;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .btn-primary:hover {
-    background: #16a34a;
-    transform: scale(1.07);
-  }
+.btn-primary:hover {
+  background: #16a34a;
+  transform: scale(1.07);
+}
 
-  .btn-primary:active {
-    transform: scale(0.9);
-  }
+.btn-primary:active {
+  transform: scale(0.9);
 }
 
 .btn-outline {
@@ -152,16 +150,14 @@ nav ul a:hover {
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .btn-outline:hover {
-    border-color: var(--green);
-    color: var(--green);
-    transform: scale(1.07);
-  }
+.btn-outline:hover {
+  border-color: var(--green);
+  color: var(--green);
+  transform: scale(1.07);
+}
 
-  .btn-outline:active {
-    transform: scale(0.9);
-  }
+.btn-outline:active {
+  transform: scale(0.9);
 }
 
 /* ── SECTIONS ── */
@@ -232,6 +228,10 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.25rem;
+}
+
+.restuarant-link {
+  text-decoration: none;
 }
 
 .project-card {
@@ -341,17 +341,16 @@ section {
   transition: all 0.2s;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .social-link:hover {
-    border-color: var(--green);
-    color: var(--green);
-    transform: scale(1.08);
-  }
-
-  .social-link:active {
-    transform: scale(0.9);
-  }
+.social-link:hover {
+  border-color: var(--green);
+  color: var(--green);
+  transform: scale(1.08);
 }
+
+.social-link:active {
+  transform: scale(0.9);
+}
+
 /* ── FOOTER ── */
 footer {
   text-align: center;
@@ -368,5 +367,9 @@ footer {
   }
   .hero h1 {
     font-size: 2rem;
+  }
+
+  .btn-group {
+    margin-bottom: 3rem;
   }
 }
